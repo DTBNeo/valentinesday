@@ -4,7 +4,7 @@
 const valentineConfig = {
   // Basic Information
   valentineName: "Jade",                    // Your Valentine's name
-  pageTitle: "Will You Be My Valentine? 💝", // Browser tab title
+  pageTitle: "Will You Be My Valentine Adi? 💝", // Browser tab title
 
   // Floating Background Elements
   floatingEmojis: {
@@ -42,7 +42,8 @@ const valentineConfig = {
   // Final Celebration
   celebration: {
     title: "Yay! I'm the luckiest person...",     // Celebration title
-    message: "Now come get your gift...",          // Celebration message
+    message: "Now come get your gift on the 14 of feburary hehe 
+      LOVE NEO...",          // Celebration message
     emojis: "🎁💖🤗💝💋❤️💕"                        // Celebration emojis
   },
 
