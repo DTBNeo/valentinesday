@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Will You Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="floatingEmojisContainer"></div>
+
+    <div id="musicContainer" class="music-container">
+        <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+        <audio id="bgMusic"></audio>
+    </div>
+
+    <div id="mainContent" class="main-content">
+        <!-- Question 1 -->
+        <div id="question1" class="question-container active">
+            <div class="heart-animation">💕</div>
+            <h1 id="q1Text">Do you like me?</h1>
+            <div class="button-container">
+                <button id="q1Yes" class="btn btn-yes">Yes</button>
+                <button id="q1No" class="btn btn-no">No</button>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="question2" class="question-container">
+            <h1 id="q2Text">How much do you love me?</h1>
+            <div class="love-meter-container">
+                <input type="range" id="loveMeter" class="love-meter" min="0" max="10000" value="100">
+                <div id="lovePercentage" class="love-percentage">100%</div>
+                <div id="loveMessage" class="love-message">And beyond! 🥰</div>
+                <div id="loveMeterStartText" class="love-meter-start">This much!</div>
+            </div>
+            <button id="q2Next" class="btn btn-next">Next ❤️</button>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="question3" class="question-container">
+            <h1 id="q3Text">Will you be my Valentine...?</h1>
+            <div class="button-container">
+                <button id="q3Yes" class="btn btn-yes">Yes!</button>
+                <button id="q3No" class="btn btn-no">No</button>
+            </div>
+        </div>
+
+        <!-- Celebration -->
+        <div id="celebration" class="celebration-container">
+            <div class="celebration-content">
+                <h1 id="celebrationTitle">Yay! I'm the luckiest person...</h1>
+                <p id="celebrationMessage">Now come get your gift...</p>
+                <div id="celebrationEmojis" class="celebration-emojis">🎁💖🤗💝💋❤️💕</div>
+                <div class="heart-explosion-container">
+                    <div id="heartExplosion" class="heart-explosion"></div>
+                </div>
+                <button id="resetBtn" class="btn btn-reset">Start Over ❤️</button>
+            </div>
+        </div>
+
+        <!-- Secret Answer Modal -->
+        <div id="secretModal" class="modal">
+            <div class="modal-content">
+                <div id="secretAnswer">I don't like you, I love you! ❤️</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import valentineConfig from './valentine-config.js';
+        import { initializeWebsite } from './script.js';
+        
+        initializeWebsite(valentineConfig);
+    </script>
+</body>
+</html>
